@@ -3,7 +3,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "tproduit";
-/* try {
+try {
  $conn = new PDO("mysql:host=$servername;dbname=$dbname",$username, $password);
  // set the PDO error mode to exception
  $conn->setAttribute(PDO::ATTR_ERRMODE,
@@ -22,12 +22,12 @@ $sql = "CREATE TABLE produit (
 } catch(PDOException $e) {
  echo $sql . "<br>" . $e->getMessage();
 }
-$conn = null; */
+$conn = null;
 ?>
 
 <?php
 // insertion des produits
-/* $servername = "localhost";
+$servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "tproduit";
@@ -53,11 +53,11 @@ PDO::ERRMODE_EXCEPTION);
  // set the resulting array to associative
  $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
  
-//  print_r($result);
+
 } catch(PDOException $e) {
  echo "Error: " . $e->getMessage();
 }
- */
+
 ?>
 
 <?php
@@ -94,7 +94,7 @@ PDO::ERRMODE_EXCEPTION);
  // set the resulting array to associative
  $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
  
-//  print_r($result);
+
 } catch(PDOException $e) {
  echo "Error: " . $e->getMessage();
 }
@@ -117,7 +117,7 @@ PDO::ERRMODE_EXCEPTION);
  // set the resulting array to associative
  $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
  
-//  print_r($result);
+
 } catch(PDOException $e) {
  echo "Error: " . $e->getMessage();
 }
@@ -139,7 +139,7 @@ PDO::ERRMODE_EXCEPTION);
  // set the resulting array to associative
  $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
  
-//  print_r($result);
+
 } catch(PDOException $e) {
  echo "Error: " . $e->getMessage();
 }

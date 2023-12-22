@@ -1,6 +1,3 @@
-<?php
-
-?>
 <html>
 <body>
 <?php
